@@ -2,19 +2,50 @@
 //  $FONTS
 //------------------------------------//
 
-// include license if available
+/**
+ * @license
+ * MyFonts Webfont Build ID 2881398, 2014-09-11T09:39:05-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Fontatica 4F Italic by 4th february
+ * URL: http://www.myfonts.com/fonts/4thfebruary/fontatica-4f/italic/
+ * 
+ * Webfont: Fontatica 4F by 4th february
+ * URL: http://www.myfonts.com/fonts/4thfebruary/fontatica-4f/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2881398
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: &#x00A9; 2012 by Sergiy S. Tkachenko / 4th february (info@4thfebruary.com.ua).&#x000D;&#x000A;All rights reserved. This font software is the property of Sergiy S. Tkachenko (Kremenchuk, Ukraine). You may not reproduce, modify, adapt, translate, alter nor 
+ * 
+ * © 2014 MyFonts Inc
+*/
 
-// Example font include:
+@import url("//hello.myfonts.net/count/2bf776");
 
-//
-// @font-face {
-//   font-family: 'PatuaOne';
-//   src: url('../fonts/patuaone-regular-webfont.eot');
-//   src: url('../fonts/patuaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-//        url('../fonts/patuaone-regular-webfont.woff') format('woff'),
-//        url('../fonts/patuaone-regular-webfont.ttf') format('truetype'),
-//        url('../fonts/patuaone-regular-webfont.svg#patua_oneregular') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
+@font-face {
+  font-family: 'Fontatica4F';
+  src: url('../fonts/2BF776_1_0.eot');
+  src: url('../fonts/2BF776_1_0.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/2BF776_1_0.woff') format('woff'),
+      url('../fonts/2BF776_1_0.ttf') format('truetype'),
+      url('../fonts/2BF776_1_0.svg#fontatica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fontatica4F';
+  src: url('../fonts/2BF776_0_0.eot');
+  src: url('../fonts/2BF776_0_0.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/2BF776_0_0.woff') format('woff'),
+      url('../fonts/2BF776_0_0.ttf') format('truetype'),
+      url('../fonts/2BF776_0_0.svg#fontatica') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
