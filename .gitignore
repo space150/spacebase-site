@@ -6,6 +6,5 @@ images/compass-sprites
 # Temporary Sass files
 .sass-cache/
 
-# Compiled source for deployment
-dist/
-tests/**/*input.css
+# Others
+*.DS_Store
