@@ -9,11 +9,11 @@ $reset:     false !default;
 $normalize: false !default;
 
 // Include push/pull styles?
-$push: true;
-$pull: true;
+$push: false;
+$pull: false;
 
 // Include responsive grid widths w/breakpoint namespace?
-$responsive:           true;
+$responsive:           false;
 $responsive-push-pull: false;
 
 // Base measurements
@@ -32,7 +32,7 @@ $gutter: $base-spacing-unit;
 
 // Layout
 $site-min-width:          320px;
-$site-wrapper-max-width:  1440px;
+$site-wrapper-max-width:  1024px;
 
 // Breakpoints
 // Set to false to exclude breakpoints
@@ -49,6 +49,7 @@ $white:        #fff9ee;
 $primary:      #7abcb5; // light teal
 $secondary:    #41a29c; // dark teal
 $tertiary:     #e48d38; // orange
+$quaternary:   #c46e35; // dark orange
 // quaternary, quinary, senary, septenary, octonary, nonary, denary
 
 // Form validation colors
