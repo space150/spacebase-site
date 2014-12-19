@@ -1,0 +1,99 @@
+//------------------------------------//
+//  $CONTENT
+//------------------------------------//
+
+.hero {
+  position: relative;
+  color: $tertiary;
+  .logo {
+    @include hide-text;
+    margin: 0 auto;
+    width: 330px;
+    height: 90px;
+    background: url('../images/logo.png') no-repeat;
+    background-size: 100%;
+  }
+  .subhead {
+    margin-bottom: 0;
+    color: $white;
+  }
+  .github {
+    @include hide-text;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    background: url('../images/github.png') no-repeat;
+    background-size: 100%;
+    z-index: 20;
+  }
+  .shoutout {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    a {
+      color: $tertiary;
+    }
+  }
+}
+
+.what {
+  background: $primary;
+  .h2 {
+    color: $white;
+  }
+}
+
+.key {
+  color: $quaternary;
+}
+
+.features {
+  background: $gray;
+}
+
+.launch {
+  color: $white;
+  background: $black;
+  a {
+    color: $tertiary;
+  }
+}
+
+.customize {
+  color: $white;
+  background: $secondary;
+}
+
+.created {
+  color: $tertiary;
+  a {
+    text-decoration: none;
+    background: $tertiary;
+    border-radius: 1em;
+  }
+}
+
+.credits {
+  color: $white;
+  background: $gray;
+  .grid {
+    position: relative;
+  }
+  .content-over-image {
+    a {
+      color: $white;
+    }
+  }
+}
+
+.contribute {
+  color: $white;
+  background: $black;
+}
+
+.footer {
+  background: $tertiary;
+}

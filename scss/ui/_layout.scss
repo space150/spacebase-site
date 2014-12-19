@@ -28,6 +28,12 @@ body { min-width: $site-min-width; }
   }
 }
 
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
 // vertically centered content, requires parent with display:table;
 .v-centered {
   display: table-cell;
@@ -43,4 +49,13 @@ body { min-width: $site-min-width; }
     height: auto !important;
     vertical-align: middle;
   }
+}
+
+.content-over-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
