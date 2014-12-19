@@ -39,9 +39,9 @@ img[height] { max-width: none; }
   table,
   fieldset,figure,figcaption,
   pre {
-    margin-top: 0;
-    @include rem(margin-bottom, $base-spacing-unit, $base-font-size--mobile);
-    ul,ol { margin-bottom: 0; }
+    margin: 0;
+    //@include rem(margin-bottom, $base-spacing-unit, $base-font-size--mobile);
+    //ul,ol { margin-bottom: 0; }
   }
 
   // Where `margin-left` is concerned, we want to try and indent certain elements

@@ -5,6 +5,9 @@
 .hero {
   position: relative;
   color: $tertiary;
+  .content-over-image {
+    @include rem(padding, $gutter 0);
+  }
   .logo {
     @include hide-text;
     margin: 0 auto;
@@ -14,14 +17,13 @@
     background-size: 100%;
   }
   .subhead {
-    margin-bottom: 0;
     color: $white;
   }
   .github {
     @include hide-text;
     position: absolute;
-    top: 0;
-    right: 0;
+    @include rem(top, $gutter);
+    @include rem(right, $gutter);
     width: 33px;
     height: 33px;
     background: url('../images/github.png') no-repeat;
@@ -30,13 +32,17 @@
   }
   .shoutout {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    @include rem(bottom, $gutter);
+    @include rem(right, $gutter);
     z-index: 20;
     a {
       color: $tertiary;
     }
   }
+}
+
+.intro {
+  @include rem(padding, $gutter 0);
 }
 
 .what {
@@ -47,10 +53,12 @@
 }
 
 .key {
+  @include rem(padding, $gutter 0);
   color: $quaternary;
 }
 
 .features {
+  @include rem(padding, $gutter 0);
   background: $gray;
 }
 
@@ -63,11 +71,13 @@
 }
 
 .customize {
+  @include rem(padding, $gutter 0);
   color: $white;
   background: $secondary;
 }
 
 .created {
+  @include rem(padding, $gutter 0);
   color: $tertiary;
   a {
     text-decoration: none;
@@ -89,11 +99,17 @@
   }
 }
 
+.download {
+  @include rem(padding, $gutter 0);
+}
+
 .contribute {
+  @include rem(padding, $gutter 0);
   color: $white;
   background: $black;
 }
 
 .footer {
+  @include rem(padding, $gutter 0);
   background: $tertiary;
 }
