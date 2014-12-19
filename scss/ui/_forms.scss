@@ -72,7 +72,7 @@ input[type="checkbox"]:focus { @include tab-focus; }
   padding: .2em 1em;
   font-family: $font-body;
   @include rem(font-size, 1);
-  color: $gray-dark;
+  color: $black;
   vertical-align: middle;
   background-color: $white;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -91,7 +91,6 @@ input[type="checkbox"]:focus { @include tab-focus; }
   &[readonly],
   fieldset[disabled] & {
     cursor: not-allowed;
-    background-color: $gray-light;
   }
 }
 
