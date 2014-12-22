@@ -12,10 +12,18 @@
   .logo {
     @include hide-text;
     margin: 0 auto;
-    width: 330px;
-    height: 90px;
+    width: 220px;
+    height: 60px;
     background: url('../images/logo.png') no-repeat;
     background-size: 100%;
+    @include media-query(lap-and-up) {
+      width: 275px;
+      height: 75px;
+    }
+    @include media-query(desk-and-up) {
+      width: 330px;
+      height: 90px;
+    }
   }
   .subhead {
     color: $white;
