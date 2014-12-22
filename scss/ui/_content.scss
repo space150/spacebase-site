@@ -89,6 +89,30 @@
   .figure-on-top {
     @include rem(padding-top, $base-spacing-unit);
   }
+  .numbers {
+    margin: 0;
+    counter-reset: li;
+    li {
+      position: relative;
+      list-style: none;
+      padding: 2.5em 0 2em;
+      &:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include translateX(-50%);
+        padding: 0.2em 0.5em 0.1em;
+        color: $black;
+        font-family: $font-headings;
+        @include rem(font-size, 1.667);
+        line-height: 1;
+        background: $tertiary;
+        border-radius: 100%;
+      }
+    }
+  }
   @include media-query(lap-and-up) {
     &:after {
       content: '';
