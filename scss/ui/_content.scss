@@ -5,8 +5,9 @@
 .hero {
   position: relative;
   color: $tertiary;
+  background: $black;
   .content-over-image {
-    @include rem(padding, $gutter 0);
+    @include rem(padding, $base-spacing-unit 0);
   }
   .logo {
     @include hide-text;
@@ -19,11 +20,17 @@
   .subhead {
     color: $white;
   }
+  .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    @include translateX(-50%);
+  }
   .github {
     @include hide-text;
     position: absolute;
-    @include rem(top, $gutter);
-    @include rem(right, $gutter);
+    @include rem(top, $base-spacing-unit);
+    @include rem(right, $base-spacing-unit);
     width: 33px;
     height: 33px;
     background: url('../images/github.png') no-repeat;
@@ -32,8 +39,8 @@
   }
   .shoutout {
     position: absolute;
-    @include rem(bottom, $gutter);
-    @include rem(right, $gutter);
+    @include rem(bottom, $base-spacing-unit);
+    @include rem(right, $base-spacing-unit);
     z-index: 20;
     a {
       color: $tertiary;
@@ -42,10 +49,10 @@
 }
 
 .intro {
-  @include rem(padding, $gutter 0);
 }
 
 .what {
+  position: relative;
   background: $primary;
   .h2 {
     color: $white;
@@ -53,12 +60,10 @@
 }
 
 .key {
-  @include rem(padding, $gutter 0);
   color: $quaternary;
 }
 
 .features {
-  @include rem(padding, $gutter 0);
   background: $gray;
 }
 
@@ -71,13 +76,11 @@
 }
 
 .customize {
-  @include rem(padding, $gutter 0);
   color: $white;
   background: $secondary;
 }
 
 .created {
-  @include rem(padding, $gutter 0);
   color: $tertiary;
   a {
     text-decoration: none;
@@ -100,16 +103,23 @@
 }
 
 .download {
-  @include rem(padding, $gutter 0);
+  @include rem(padding, $base-spacing-unit*2 0);
+  @include media-query(lap-and-up) {
+    @include rem(padding, $gutter*3 0);
+  }
 }
 
 .contribute {
-  @include rem(padding, $gutter 0);
+  @include rem(padding, $base-spacing-unit 0);
   color: $white;
   background: $black;
+  p {
+    margin-bottom: 1.5em;
+  }
 }
 
 .footer {
-  @include rem(padding, $gutter 0);
+  @include rem(padding, $base-spacing-unit 0);
+  @include rem(font-size, 0.889);
   background: $tertiary;
 }
