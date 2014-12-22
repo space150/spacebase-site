@@ -57,6 +57,18 @@
   .h2 {
     color: $white;
   }
+  @include media-query(lap-and-up) {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      background: $secondary;
+      z-index: 0;
+    }
+  }
 }
 
 .key {
@@ -68,10 +80,29 @@
 }
 
 .launch {
+  position: relative;
   color: $white;
   background: $black;
   a {
     color: $tertiary;
+  }
+  .figure-on-top {
+    @include rem(padding-top, $base-spacing-unit);
+  }
+  @include media-query(lap-and-up) {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      background: $tertiary;
+      z-index: 0;
+    }
+  }
+  .figure-on-top {
+    @include rem(padding-top, $base-spacing-unit*2);
   }
 }
 
@@ -90,6 +121,7 @@
 }
 
 .credits {
+  position: relative;
   color: $white;
   background: $gray;
   .grid {
@@ -98,6 +130,18 @@
   .content-over-image {
     a {
       color: $white;
+    }
+  }
+  @include media-query(lap-and-up) {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      background: $grayDark;
+      z-index: 0;
     }
   }
 }

@@ -49,13 +49,19 @@
     </div>
   </section>
   <section class="what">
-    <div class="grid-wrapper">
-      <div class="grid one-half padding">
-        <h2 class="h2">What is it?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div class="grid one-half padding">
-        <img src="images/browser.png" alt="code" />
+    <div class="container">
+      <div class="grid-wrapper grid-wrapper--full">
+        <div class="grid one-half">
+          <div class="left padding">
+            <h2 class="h2">What is it?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="grid one-half">
+          <div class="right padding figure-on-top">
+            <img src="images/browser.png" alt="code" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -79,19 +85,25 @@
     </div>
   </section>
   <section class="launch">
-    <div class="grid-wrapper">
-      <div class="grid one-half">
-        <h2 class="h2">Launch Sequence</h2>
-        <img src="images/ship.png" alt="spaceship" />
-      </div>
-      <div class="grid one-half padding">
-        <ol>
-          <li><a href="https://github.com/space150/spaceBase/archive/v1.0.zip">Download the ZIP</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+    <div class="container">
+      <div class="grid-wrapper grid-wrapper--full">
+        <div class="grid one-half">
+          <div class="left figure-on-top">
+            <h2 class="h2">Launch Sequence</h2>
+            <img src="images/ship.png" alt="spaceship" />
+          </div>
+        </div>
+        <div class="grid one-half">
+          <div class="right padding">
+            <ol>
+              <li><a href="https://github.com/space150/spaceBase/archive/v1.0.zip">Download the ZIP</a></li>
+              <li>Lorem ipsum dolor</li>
+              <li>dolor sit amet</li>
+              <li>consectetur adipisicing</li>
+              <li>sed do eiusmod tempor</li>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -120,28 +132,34 @@
     </div>
   </section>
   <section class="credits">
-    <div class="grid-wrapper">
-      <div class="grid one-half">
-        <div class="figure"><img src="images/crew.jpg" alt="space150 front-end crew" /></div>
-        <div class="content-over-image">
-          <div class="table">
-            <div class="v-centered">
-              <h2 class="h2">Mission Control</h2>
-              <p><a href="http://space150.com" target="_blank">space150</a></p>
+    <div class="site-wrapper">
+      <div class="grid-wrapper grid-wrapper--full">
+        <div class="grid one-half">
+          <div class="figure-on-top">
+            <div class="figure"><img src="images/crew.jpg" alt="space150 front-end engineers" /></div>
+            <div class="content-over-image">
+              <div class="table">
+                <div class="v-centered">
+                  <h2 class="h2">Mission Control</h2>
+                  <p><a href="http://space150.com" target="_blank">space150</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="grid one-half padding">
-        <h2 class="h2">Credits</h2>
-        <ul class="v-list">
-          <li><a href="https://github.com/csswizardry/inuit.css" target="_blank">Harry Robert’s Inuit.css</a></li>
-          <li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></li>
-          <li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
-          <li><a href="http://necolas.github.io/normalize.css" target="_blank">Normalize.css</a></li>
-          <li><a href="http://meyerweb.com/eric/tools/css/reset" target="_blank">Eric Meyer’s CSS Reset</a></li>
-          <li><a href="http://www.amazon.com/Golden-Girls-Season-4/dp/B000C1VBAA" target="_blank">The Golden Girls - Season 4</a></li>
-        </ul>
+        <div class="grid one-half">
+          <div class="padding">
+            <h2 class="h2">Credits</h2>
+            <ul class="v-list">
+              <li><a href="https://github.com/csswizardry/inuit.css" target="_blank">Harry Robert’s Inuit.css</a></li>
+              <li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></li>
+              <li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
+              <li><a href="http://necolas.github.io/normalize.css" target="_blank">Normalize.css</a></li>
+              <li><a href="http://meyerweb.com/eric/tools/css/reset" target="_blank">Eric Meyer’s CSS Reset</a></li>
+              <li><a href="http://www.amazon.com/Golden-Girls-Season-4/dp/B000C1VBAA" target="_blank">The Golden Girls - Season 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -149,12 +167,14 @@
     <p><a class="btn" href="https://github.com/space150/spaceBase/archive/v1.0.zip">Download spaceBase</a><p>
   </section>
   <section class="contribute">
-    <p>Lorem ipsum dolor sit amet consectetur. <br />Tempor incididunt ut labore et dolore magna aliqua.</p>
-    <ul class="h-list h-list--centered">
-      <li><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="space150">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
-      <li><iframe src="http://ghbtns.com/github-btn.html?user=space150&repo=spaceBase&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
-      <li><iframe src="http://ghbtns.com/github-btn.html?user=space150&repo=spaceBase&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
-    </ul>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur. <br />Tempor incididunt ut labore et dolore magna aliqua.</p>
+      <ul class="h-list h-list--centered">
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="space150">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
+        <li><iframe src="http://ghbtns.com/github-btn.html?user=space150&repo=spaceBase&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+        <li><iframe src="http://ghbtns.com/github-btn.html?user=space150&repo=spaceBase&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+      </ul>
+    </div>
   </section>
   <section class="footer">
     <img src="images/helmet.png" alt="spaceman" />

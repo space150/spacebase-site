@@ -37,6 +37,15 @@ body { min-width: $site-min-width; }
   }
 }
 
+@include media-query(lap-and-up) {
+  .left {
+    @include rem(padding-right, $gutter*2);
+  }
+  .right {
+    @include rem(padding-left, $gutter*2);
+  }
+}
+
 .table {
   display: table;
   width: 100%;
@@ -66,5 +75,10 @@ body { min-width: $site-min-width; }
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 10;
+}
+
+.figure-on-top {
+  position: relative;
   z-index: 10;
 }
