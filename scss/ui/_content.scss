@@ -73,6 +73,17 @@
 
 .key {
   color: $quaternary;
+  .h3 {
+    display: block;
+  }
+  img {
+    @include rem(margin, 1 0 0.6);
+  }
+  @include media-query(lap-and-up) {
+    img {
+      @include rem(margin, 0.4 0 1.5);
+    }
+  }
 }
 
 .features {
@@ -124,9 +135,9 @@
       background: $tertiary;
       z-index: 0;
     }
-  }
-  .figure-on-top {
-    @include rem(padding-top, $base-spacing-unit*2);
+    .figure-on-top {
+      @include rem(padding-top, $base-spacing-unit*2);
+    }
   }
 }
 
