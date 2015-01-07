@@ -28,22 +28,11 @@
   .subhead {
     color: $white;
   }
-  .btn {
-    position: absolute;
-    top: auto;
-    left: 50%;
-    bottom: 2em;
-    @include translateX(-50%);
-    &:hover,
-    &:focus {
-      bottom: 1.9em;
-    }
-  }
-  .github {
+  .github a {
     @include hide-text;
     position: absolute;
-    @include rem(top, $base-spacing-unit);
-    @include rem(right, $base-spacing-unit);
+    @include rem(top, $base-spacing-unit/2);
+    @include rem(right, $base-spacing-unit/2);
     width: 33px;
     height: 33px;
     background: url('../images/github.png') no-repeat;
@@ -51,12 +40,55 @@
     z-index: 20;
   }
   .shoutout {
-    position: absolute;
-    @include rem(bottom, $base-spacing-unit);
-    @include rem(right, $base-spacing-unit);
-    z-index: 20;
+    color: $black;
+    @include rem(font-size, 0.889);
     a {
+      color: $black;
+    }
+  }
+  @include media-query(lap-and-up) {
+    .btn {
+      position: absolute;
+      top: auto;
+      left: 50%;
+      bottom: 2em;
+      @include translateX(-50%);
+      &:hover,
+      &:focus {
+        bottom: 1.9em;
+      }
+    }
+    .github a {
+      @include rem(top, $base-spacing-unit);
+      @include rem(right, $base-spacing-unit);
+    }
+    .shoutout {
+      position: absolute;
+      @include rem(bottom, $base-spacing-unit/2);
+      @include rem(right, $base-spacing-unit);
       color: $tertiary;
+      @include rem(font-size, 0.889);
+      z-index: 20;
+      a {
+        color: $tertiary;
+      }
+    }
+  }
+  @include media-query(below-lap) {
+    .figure {
+      display: none;
+    }
+    .content-over-image {
+      position: relative;
+      @include rem(padding-bottom, $base-spacing-unit/2);
+      background: url('../images/hero.png') no-repeat center bottom;
+      background-size: auto 100%;
+    }
+    p:not(.shoutout) {
+      margin-bottom: 1em;
+    }
+    .btn {
+      margin-top: 4em;
     }
   }
 }
