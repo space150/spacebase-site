@@ -272,8 +272,14 @@
   .grid {
     position: relative;
   }
-  .content-over-image a {
-    color: $white;
+  .figure-on-top {
+    background: $grayDark;
+    .padding {
+      padding-bottom: 0;
+    }
+    a {
+      color: $white;
+    }
   }
   @include media-query(lap-and-up) {
     &:after {
