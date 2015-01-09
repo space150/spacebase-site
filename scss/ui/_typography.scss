@@ -17,6 +17,10 @@ a {
 
 i { font-style: normal; }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 h1, h2, h3, .h1, .h2, .h3 {
   font-family: $font-headings;
   font-weight: normal;
