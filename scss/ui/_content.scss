@@ -114,6 +114,11 @@
       z-index: 0;
     }
   }
+  @include media-query(below-lap) {
+    .figure-on-top img {
+      max-width: 50%;
+    }
+  }
 }
 
 .key {
@@ -189,6 +194,9 @@
         background: $tertiary;
         border-radius: 100%;
       }
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
   @include media-query(lap-and-up) {
@@ -205,10 +213,13 @@
     .figure-on-top {
       @include rem(padding-top, $base-spacing-unit*2);
     }
+    .numbers {
+      margin-top: 3.333em;
+    }
   }
   @include media-query(below-lap) {
     .figure-on-top img {
-      max-width: 50%;
+      max-width: 40%;
     }
   }
 }
