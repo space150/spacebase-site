@@ -263,7 +263,7 @@
     }
     span {
       display: inline-block;
-      padding: 0.8em;
+      padding: 0.8em 0.2em;
     }
     &:hover span {
       text-decoration: underline;
@@ -272,6 +272,12 @@
   @include media-query(lap-and-up) {
     a {
       @include rem(margin, $base-spacing-unit 0 0);
+      @include rem(font-size, 0.889);
+    }
+  }
+  @include media-query(desk-and-up) {
+    a {
+      @include rem(font-size, 1);
     }
   }
 }
