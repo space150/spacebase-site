@@ -17,6 +17,14 @@ a {
 
 i { font-style: normal; }
 
+pre {
+  margin-top: 0.2em;
+  padding: 0 0.4em;
+  background: $quaternary;
+  border-radius: 0.5em;
+  white-space: normal;
+}
+
 .no-wrap {
   white-space: nowrap;
 }
