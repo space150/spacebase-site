@@ -149,7 +149,7 @@
       margin-left: -5px;
       height: 10px;
       width: 10px;
-      background: $grayDark;
+      background: $gray-dark;
       border-radius: 100%;
     }
     &:last-child {
@@ -188,7 +188,7 @@
         @include translateX(-50%);
         padding: 0.2em 0.5em 0.1em;
         color: $black;
-        font-family: $font-headings;
+        font-family: $font-head;
         @include rem(font-size, 1.667);
         line-height: 1;
         background: $tertiary;
@@ -290,7 +290,7 @@
     position: relative;
   }
   .figure-on-top {
-    background: $grayDark;
+    background: $gray-dark;
     .padding {
       padding-bottom: 0;
     }
@@ -306,7 +306,7 @@
       bottom: 0;
       left: 0;
       width: 50%;
-      background: $grayDark;
+      background: $gray-dark;
       z-index: 0;
     }
   }

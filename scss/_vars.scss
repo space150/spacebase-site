@@ -3,7 +3,7 @@
 //------------------------------------//
 
 /*
-  spaceBase version: 1.0
+  spaceBase version: 1.0.1
   http://spacebase.space150.com
 */
 
@@ -48,7 +48,7 @@ $wall-start:   1200px;
 
 // Colors
 $black:        #583318;
-$grayDark:     #91857d;
+$gray-dark:    #91857d;
 $gray:         #c2b2a7;
 $white:        #fff9ee;
 
@@ -56,12 +56,12 @@ $primary:      #7abcb5; // light teal
 $secondary:    #41a29c; // dark teal
 $tertiary:     #e48d38; // orange
 $quaternary:   #c46e35; // dark orange
-// quaternary, quinary, senary, septenary, octonary, nonary, denary
+// quinary, senary, septenary, octonary, nonary, denary
 
 // Form validation colors
 $state-success:  #468847;
 $state-error:    #b94a48;
 
 // Fonts
-$font-body:      "Source Sans Pro", Arial, Helvetica, sans-serif;
-$font-headings:  "Fontatica4F", Arial, Helvetica, sans-serif;
+$font-body:    "Source Sans Pro", Arial, Helvetica, sans-serif;
+$font-head:    "Fontatica4F", Arial, Helvetica, sans-serif;
