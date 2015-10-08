@@ -1,5 +1,5 @@
 # Site settings
-title: spaceBase
+title: spaceBase: A Sass-based Responsive CSS framework
 email: spacebase@space150.com
 description: > # this means to ignore newlines until "baseurl:"
   spaceBase is a boilerplate layer that can be built upon and tailored for your
