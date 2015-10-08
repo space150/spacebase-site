@@ -1,0 +1,24 @@
+// We're pulling spaceBase in as a submodule so it will be easier to update.
+// Any file that has been modified has been copied in to this directory, while
+// all stock spaceBase files are imported from the submodule (../_spaceBase).
+
+@import "vars";
+@import "../_spaceBase/scss/vendor/normalize"; $normalize: true;
+
+@import
+// BASE
+  "../_spaceBase/scss/base/functions",
+  "../_spaceBase/scss/base/mixins",
+  "../_spaceBase/scss/base/grids",
+  "../_spaceBase/scss/base/widths",
+  "base/shared",
+  "../_spaceBase/scss/base/helpers",
+// UI
+  "ui/fonts",
+  "ui/typography",
+  "ui/buttons",
+  "ui/lists",
+  "ui/media",
+  "ui/layout",
+  "ui/content"
+;
