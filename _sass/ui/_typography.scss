@@ -1,0 +1,57 @@
+//------------------------------------//
+//  $TYPOGRAPHY
+//------------------------------------//
+
+html {
+  font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $font-body;
+  color: $black;
+  background: $white;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+}
+
+i { font-style: normal; }
+
+pre {
+  margin-top: 0.2em;
+  padding: 0 0.4em;
+  background: $quaternary;
+  border-radius: 0.5em;
+  white-space: normal;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: $font-head;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  @include rem(font-size, 3);
+}
+
+h2, .h2 {
+  @include rem(font-size, 2);
+}
+
+h3, .h3 {
+  @include rem(font-size, 1.4);
+}
+
+@include media($from: lap) {
+  h1, .h1 { @include rem(font-size, (90/18)); }
+
+  h2, .h2 { @include rem(font-size, (60/18)); }
+
+  h3, .h3 { @include rem(font-size, (30/18)); }
+}
