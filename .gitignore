@@ -3,8 +3,10 @@ javascripts/compiled/*
 stylesheets/*
 images/compass-sprites
 
+/_site
+
 # Temporary Sass files
 .sass-cache/
 
-# Others
 *.DS_Store
+
