@@ -13,17 +13,13 @@
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-
+  text-decoration: none;
   border: 0;
   border-radius: 1em;
   background: $primary;
   color: $white;
   cursor: pointer;
-
-  text-decoration: none;
-
   box-shadow: 0 5px 0 $secondary;
-
   transition: all 0.1s ease;
 
   &:hover,
@@ -31,6 +27,7 @@
     top: 3px;
     text-decoration: none;
     box-shadow: 0 2px 0 $secondary;
+    -webkit-transform: translateY(3px);
     transform: translateY(3px);
   }
 
