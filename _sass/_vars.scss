@@ -14,12 +14,12 @@ $normalize: false !default;
 $reset:     false !default;
 
 // Include push/pull styles?
-$push: false;
-$pull: false;
+$push: true;
+$pull: true;
 
 // Include responsive grid widths w/breakpoint namespace?
-$responsive:           false;
-$responsive-push-pull: false;
+$responsive:           true;
+$responsive-push-pull: true;
 
 // Base measurements
 $base-font-size:         18px;
@@ -61,6 +61,7 @@ $media-features: (
 $black:        #583318;
 $gray-dark:    #91857d;
 $gray:         #c2b2a7;
+$gray-light:   #c2b2a7;
 $white:        #fff9ee;
 
 $primary:      #7abcb5; // light teal
