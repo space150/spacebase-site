@@ -30,6 +30,7 @@ $legacy-ie: true;
 .sg-demo-block {
   background-color: $gray;
   color: $white;
+  letter-spacing: .1rem;
   @include rem(padding, $half-spacing-unit);
   @include rem(margin, 0 0 $base-spacing-unit);
 }
