@@ -9,6 +9,7 @@ The public site promoting spaceBase.
 spaceBase is pulled in via a submodule.
 
 `git submodule init`
+
 `git submodule update`
 
 ## To run:
