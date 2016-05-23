@@ -13,3 +13,11 @@ spaceBase is pulled in via a submodule.
 ## To run:
 
 `jekyll serve --watch`
+
+
+
+## To upgrade spaceBase submodule:
+
+`cd _spaceBase`
+
+`git pull origin master`
