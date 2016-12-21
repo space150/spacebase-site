@@ -17,8 +17,12 @@ a {
 
 i { font-style: normal; }
 
+p, ul, ol, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
 pre {
-  margin-top: 0.2em;
+  margin: 0.2em 0 0;
   padding: 0 0.4em;
   background: $quaternary;
   border-radius: 0.5em;
@@ -30,6 +34,7 @@ pre {
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
+  margin-bottom: 0;
   font-family: $font-head;
   font-weight: normal;
   text-transform: uppercase;
@@ -37,22 +42,22 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 h1, .h1 {
-  @include rem(font-size, 3);
+  font-size: rem(3);
 }
 
 h2, .h2 {
-  @include rem(font-size, 2);
+  font-size: rem(2);
 }
 
 h3, .h3 {
-  @include rem(font-size, 1.4);
+  font-size: rem(1.4);
 }
 
 @include media($from: lap) {
-  h1, .h1 { @include rem(font-size, (90/18)); }
+  h1, .h1 { font-size: rem(90/18); }
 
-  h2, .h2 { @include rem(font-size, (60/18)); }
+  h2, .h2 { font-size: rem(60/18); }
 
-  h3, .h3 { @include rem(font-size, (30/18)); }
+  h3, .h3 { font-size: rem(30/18); }
 }
 
