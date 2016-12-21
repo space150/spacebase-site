@@ -3,14 +3,14 @@
 @charset "utf-8";
 
 $legacy-ie: true;
-@import "vars";
 @import "../_spaceBase/scss/base/functions";
+@import "vars";
 @import "../_spaceBase/scss/base/mixins";
 
 .sg {
   text-align: left;
   p, ul, ol {
-    @include rem(margin-bottom, $base-spacing-unit);
+    margin-bottom: $base-spacing-unit;
     ul, ol {
       margin-bottom: 0;
     }
@@ -18,11 +18,11 @@ $legacy-ie: true;
 }
 
 .sg-landmark {
-  @include rem(margin-bottom, 3 * $base-spacing-unit);
+  margin-bottom: 3 * $base-spacing-unit;
 }
 
 .sg-heading {
-  @include rem(margin-bottom, $base-spacing-unit);
+  margin-bottom: $base-spacing-unit;
   padding: 0 0 .2em;
   border-bottom: 2px solid $gray;
 }
@@ -30,15 +30,15 @@ $legacy-ie: true;
 .sg-demo-block {
   background-color: $gray;
   color: $white;
-  @include rem(padding, $half-spacing-unit);
-  @include rem(margin, 0 0 $base-spacing-unit);
+  padding: $half-spacing-unit;
+  margin: 0 0 $base-spacing-unit;
 }
 
 .sg-colors li {
   border: 1px solid $gray-light;
   background: $white;
-  @include rem(padding, .4);
-  @include rem(margin-bottom, $half-spacing-unit);
+  padding: rem(.4);
+  margin-bottom: $half-spacing-unit;
 }
 
 .sg-swatch {

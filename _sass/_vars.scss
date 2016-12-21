@@ -3,7 +3,7 @@
 //------------------------------------//
 
 /*
-  spaceBase version: 2.0.1
+  spaceBase version: 3.0.0
   http://spacebase.space150.com
 */
 
@@ -29,15 +29,16 @@ $base-font-size--mobile: $base-font-size;
 
 // Calculated measurements
 $line-height-ratio: $base-line-height / $base-font-size;
-$base-spacing-unit: $line-height-ratio;
+
+$base-spacing-unit: rem($line-height-ratio);
 $half-spacing-unit: $base-spacing-unit / 2;
 
 // Grid
 $gutter: $base-spacing-unit;
 
 // Layout
-$site-min-width:          320px;
-$site-wrapper-max-width:  1024px;
+$site-min-width:         320px;
+$site-wrapper-max-width: 1024px;
 
 // Breakpoints
 $media-breakpoints: (
@@ -69,6 +70,10 @@ $secondary:    #41a29c; // dark teal
 $tertiary:     #e48d38; // orange
 $quaternary:   #c46e35; // dark orange
 // quinary, senary, septenary, octonary, nonary, denary
+
+// List of colors used to automatically populate styleguide
+$styleguide-colors:
+$black, $gray-dark, $gray, $gray-light, $white, $primary, $secondary, $tertiary, $quaternary;
 
 // Form validation colors
 $state-success:  #468847;
