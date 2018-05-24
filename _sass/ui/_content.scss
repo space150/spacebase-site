@@ -41,7 +41,7 @@
   }
   .shoutout {
     color: $black;
-    font-size: rem(0.889);
+    font-size: 0.889rem;
     a {
       color: $black;
     }
@@ -68,7 +68,7 @@
       bottom: $half-spacing-unit;
       right: $base-spacing-unit;
       color: $tertiary;
-      font-size: rem(0.889);
+      font-size: 0.889rem;
       z-index: 20;
       a {
         color: $tertiary;
@@ -128,11 +128,11 @@
     display: block;
   }
   img {
-    margin: rem(1 0 0.6);
+    margin: 1rem 0 0.6rem;
   }
   @include media($from: lap) {
     img {
-      margin: rem(0.4 0 1.5);
+      margin: 0.4rem 0 1.5rem;
     }
   }
 }
@@ -191,7 +191,7 @@
         padding: 0.2em 0.5em 0.1em;
         color: $black;
         font-family: $font-head;
-        font-size: rem(1.667);
+        font-size: 1.667rem;
         line-height: 1;
         background: $tertiary;
         border-radius: 100%;
@@ -274,12 +274,12 @@
   @include media($from: lap) {
     a {
       margin: $base-spacing-unit 0 0;
-      font-size: rem(0.889);
+      font-size: 0.889rem;
     }
   }
   @include media($from: desk) {
     a {
-      font-size: rem(1);
+      font-size: 1rem;
     }
   }
 }
@@ -342,6 +342,6 @@
 
 .footer {
   padding: $base-spacing-unit 0;
-  font-size: rem(0.889);
+  font-size: 0.889rem;
   background: $tertiary;
 }

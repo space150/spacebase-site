@@ -42,22 +42,21 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 h1, .h1 {
-  font-size: rem(3);
+  font-size: 3rem;
 }
 
 h2, .h2 {
-  font-size: rem(2);
+  font-size: 2rem;
 }
 
 h3, .h3 {
-  font-size: rem(1.4);
+  font-size: 1.4rem;
 }
 
 @include media($from: lap) {
-  h1, .h1 { font-size: rem(90/18); }
+  h1, .h1 { font-size: 5rem; }
 
-  h2, .h2 { font-size: rem(60/18); }
+  h2, .h2 { font-size: 3.333rem; }
 
-  h3, .h3 { font-size: rem(30/18); }
+  h3, .h3 { font-size: 1.667rem; }
 }
-
