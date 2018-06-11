@@ -1,4 +1,30 @@
 ---
 ---
 
-@import "manifest";
+// We're pulling spaceBase in as a submodule so it will be easier to update.
+// Any file that has been modified has been copied in to the _sass directory, while
+// all stock spaceBase files are imported from the submodule (_spaceBase).
+
+@import "../_spaceBase/scss/base/functions";
+@import "vars";
+@import "../_spaceBase/scss/vendor/normalize"; $normalize: true;
+
+@import
+// BASE
+  "../_spaceBase/scss/base/mixins",
+  "../_spaceBase/scss/base/grids",
+  "../_spaceBase/scss/base/widths",
+  "../_spaceBase/scss/base/push",
+  "../_spaceBase/scss/base/shared",
+  "../_spaceBase/scss/base/helpers",
+// UI
+  "ui/fonts",
+  "ui/typography",
+  "ui/buttons",
+  "../_spaceBase/scss/ui/forms",
+  "../_spaceBase/scss/ui/island",
+  "../_spaceBase/scss/ui/lists",
+  "ui/layout",
+  "ui/content",
+  "../_spaceBase/scss/ui/print"
+;

@@ -3,23 +3,20 @@
 //------------------------------------//
 
 /*
-  spaceBase version: 3.0.1
+  spaceBase version: 4.0.0
   http://spacebase.space150.com
 */
 
-$legacy-ie: false !default;
-
-// To select Normalize or Reset, see _manifest.scss
+// To select Normalize or Reset, see application.scss
 $normalize: false !default;
 $reset:     false !default;
 
-// Include push/pull styles?
+// Include push styles?
 $push: true;
-$pull: true;
 
 // Include responsive grid widths w/breakpoint namespace?
-$responsive:           true;
-$responsive-push-pull: true;
+$responsive:      true;
+$responsive-push: true;
 
 // Base measurements
 $base-font-size:         18px;
@@ -30,7 +27,7 @@ $base-font-size--mobile: $base-font-size;
 // Calculated measurements
 $line-height-ratio: $base-line-height / $base-font-size;
 
-$base-spacing-unit: rem($line-height-ratio);
+$base-spacing-unit: $line-height-ratio * 1rem;
 $half-spacing-unit: $base-spacing-unit / 2;
 
 // Grid
@@ -47,8 +44,6 @@ $media-breakpoints: (
   desk: 1024px,
   wall: 1200px
 );
-
-$legacy-media-breakpoint: desk;
 
 // Media query expressions
 $media-features: (
@@ -69,6 +64,7 @@ $primary:      #7abcb5; // light teal
 $secondary:    #41a29c; // dark teal
 $tertiary:     #e48d38; // orange
 $quaternary:   #c46e35; // dark orange
+
 // quinary, senary, septenary, octonary, nonary, denary
 
 // List of colors used to automatically populate styleguide
