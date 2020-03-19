@@ -1,7 +1,6 @@
 # never commit compiled code
 javascripts/compiled/*
 stylesheets/*
-images/compass-sprites
 
 /_site
 
@@ -9,4 +8,3 @@ images/compass-sprites
 .sass-cache/
 
 *.DS_Store
-
