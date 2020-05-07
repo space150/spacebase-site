@@ -48,12 +48,6 @@ body { min-width: $site-min-width; }
   }
 }
 
-.table {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
 // vertically centered content, requires parent with display:table;
 .v-centered {
   display: table-cell;
@@ -83,4 +77,19 @@ body { min-width: $site-min-width; }
 .figure-on-top {
   position: relative;
   z-index: 10;
+}
+
+.table {
+  th, td {
+    padding: 0.5rem;
+    line-height: 1.4;
+    text-align: center;
+    border-bottom: solid 1px $gray-light;
+    @include media($from: lap) {
+      padding: 0.5rem 1rem;
+    }
+    @include media($upto: lap) {
+      font-size: 0.9rem;
+    }
+  }
 }

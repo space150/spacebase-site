@@ -12,7 +12,8 @@ title: spaceBase Style Guide
   </div>
   <div class="sg-landmark">
     <h2 class="sg-heading">Basic Grid</h2>
-    <p>The grid below shows a combination of nested, reversed, and gutterless grids. Each integer represents the high-level grid item you are looking at, and each decimal represents the grid item’s level of nesting (if any), e.g. 2.3 represents the third nested grid inside of the second major grid.</p>
+    <p>The grid structure is built on a flexbox-powered 12-column grid. It uses percentage-width flex items with human-readable classnames (i.e. one-half, two-thirds, three-quarters, etc). Each set of "grid" items must be wrapped in a "grid-wrapper". Grid items can be reversed by adding "grid-wrapper--rev", and gutters can be removed by adding "grid-wrapper--full". Alignment and distribution of grid items can be altered with classes as well.</p>
+    <p>The grids below show a combination of nested, reversed, and gutterless grids. Each integer represents the high-level grid item you are looking at, and each decimal represents the grid item’s level of nesting (if any), e.g. 2.3 represents the third nested grid inside of the second major grid.</p>
     <div class="grid-wrapper">
       <div class="grid  one-half">
         <div class="grid-wrapper">
@@ -100,6 +101,33 @@ title: spaceBase Style Guide
   </div>
   <div class="sg-landmark">
     <h2 class="sg-heading">Responsive Grid</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Small</th>
+          <th>Medium</th>
+          <th>Large</th>
+          <th>Extra Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Min-Width</strong></td>
+          <td>480px</td>
+          <td>768px</td>
+          <td>1024px</td>
+          <td>1200px</td>
+        </tr>
+        <tr>
+          <td><strong>Class Prefix</strong></td>
+          <td>.hand-</td>
+          <td>.lap-</td>
+          <td>.desk-</td>
+          <td>.wall-</td>
+        </tr>
+      </tbody>
+    </table>
     <p>The grid below shows a combination of nested, fully-responsive grids using breakpoint-specific classes.</p>
     <div class="grid-wrapper">
       <div class="grid  one-half">
