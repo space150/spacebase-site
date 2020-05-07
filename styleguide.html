@@ -185,12 +185,14 @@ title: spaceBase Style Guide
   </div>
   <div class="sg-landmark">
     <h2 class="sg-heading">Typography</h2>
-    <h1>h1.Heading 1</h1>
-    <h2>h2.Heading 2</h2>
-    <h3>h3.Heading 3</h3>
-    <h4>h4.Heading 4</h4>
-    <h5>h5.Heading 5</h5>
-    <h6>h6.Heading 6</h6>
+    <div class="landmark">
+      <h1>h1.Heading 1</h1>
+      <h2>h2.Heading 2</h2>
+      <h3>h3.Heading 3</h3>
+      <h4>h4.Heading 4</h4>
+      <h5>h5.Heading 5</h5>
+      <h6>h6.Heading 6</h6>
+    </div>
     <div class="grid-wrapper">
       <div class="grid lap-one-third">
         <h3 class="sg-heading">Unordered List</h3>
@@ -301,7 +303,7 @@ title: spaceBase Style Guide
     </table>
   </div>
   <div class="sg-landmark">
-    <h2 class="sg-heading">Sample Content Block</h2>
+    <h2 class="sg-heading">Sample Content</h2>
     <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <blockquote>
@@ -315,22 +317,20 @@ title: spaceBase Style Guide
     <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
   </div>
   <div class="sg-landmark">
-    <h2 class="sg-heading">Form Buttons</h2>
-    <form>
-      <div class="grid-wrapper">
-        <div class="grid lap-one-half">
-          <p><input class="btn" type="button" value="Input type button"></p>
-          <p><input class="btn" type="submit" value="Input type submit"></p>
-          <p><input class="btn" type="submit" value="Input type submit disabled" disabled></p>
-          <p><a class="btn">Link type button</a></p>
-        </div>
-        <div class="grid lap-one-half">
-          <p><button class="btn" type="button">Button type button</button></p>
-          <p><button class="btn" type="submit">Button type submit</button></p>
-          <p><button class="btn" type="button" disabled>Button type button disabled</button></p>
-        </div>
+    <h2 class="sg-heading">Buttons</h2>
+    <div class="grid-wrapper">
+      <div class="grid lap-one-half">
+        <p><input class="btn" type="button" value="Input type button"></p>
+        <p><input class="btn" type="submit" value="Input type submit"></p>
+        <p><input class="btn" type="submit" value="Input type submit disabled" disabled></p>
+        <p><a class="btn">Link type button</a></p>
       </div>
-    </form>
+      <div class="grid lap-one-half">
+        <p><button class="btn" type="button">Button type button</button></p>
+        <p><button class="btn" type="submit">Button type submit</button></p>
+        <p><button class="btn" type="button" disabled>Button type button disabled</button></p>
+      </div>
+    </div>
   </div>
   <div class="sg-landmark">
     <h2 class="sg-heading">Form Fields</h2>
@@ -421,7 +421,7 @@ title: spaceBase Style Guide
             <label for="file">File input</label>
             <input class="form-control-file" type="file" id="file">
           </div>
-          <div class="form-group">
+          <fieldset class="form-group">
             <legend>Checkbox</legend>
             <div class="checkbox"><label for="checkbox1"><input type="checkbox" checked="checked" name="checkbox" id="checkbox1"> Choice A</label></div>
             <div class="checkbox"><label for="checkbox2"><input type="checkbox" name="checkbox" id="checkbox2"> Choice B</label></div>
@@ -429,16 +429,16 @@ title: spaceBase Style Guide
             <div class="checkbox"><label for="checkbox4"><input type="checkbox" name="checkbox" id="checkbox4" disabled> Choice Disabled</label></div>
             <div class="checkbox has-error"><label for="checkbox5"><input type="checkbox" name="checkbox" id="checkbox5"> Choice Error</label></div>
             <div class="checkbox has-success"><label for="checkbox6"><input type="checkbox" name="checkbox" id="checkbox6"> Choice Valid</label></div>
-          </div>
-          <div class="form-group">
+          </fieldset>
+          <fieldset class="form-group">
             <legend>Radio</legend>
-            <div class="radio"><label for="radio1"><input type="radio" checked="checked" name="radio" id="radio1"> Option 1</label></div>
-            <div class="radio"><label for="radio2"><input type="radio" name="radio" id="radio2"> Option 2</label></div>
-            <div class="radio"><label for="radio3"><input type="radio" name="radio" id="radio3"> Option 3</label></div>
-            <div class="radio"><label for="radio4"><input type="radio" name="radio" id="radio4" disabled> Option Disabled</label></div>
-            <div class="radio has-error"><label for="radio5"><input type="radio" name="radio" id="radio5"> Option Error</label></div>
-            <div class="radio has-success"><label for="radio6"><input type="radio" name="radio" id="radio6"> Option Valid</label></div>
-          </div>
+            <div class="radio"><label for="radio1"><input type="radio" checked="checked" name="radio" id="radio1" value="option 1"> Option 1</label></div>
+            <div class="radio"><label for="radio2"><input type="radio" name="radio" id="radio2" value="option 2"> Option 2</label></div>
+            <div class="radio"><label for="radio3"><input type="radio" name="radio" id="radio3" value="option 3"> Option 3</label></div>
+            <div class="radio"><label for="radio4"><input type="radio" name="radio" id="radio4" value="option disabled" disabled> Option Disabled</label></div>
+            <div class="radio has-error"><label for="radio5"><input type="radio" name="radio" id="radio5" value="option error"> Option Error</label></div>
+            <div class="radio has-success"><label for="radio6"><input type="radio" name="radio" id="radio6" value="option valid"> Option Valid</label></div>
+          </fieldset>
         </div>
       </div>
     </form>
